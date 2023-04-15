@@ -11,6 +11,9 @@ function createImage(src, onclick) {
   const img = new Image();
   img.src = src;
   img.onclick = onclick;
+  if (src.startsWith('teki')) {
+    img.classList.add('teki');
+  }
   return img;
 }
 
