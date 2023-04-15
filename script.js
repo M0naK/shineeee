@@ -33,7 +33,7 @@ function tapImage(event) {
   };
   img.onclick = null;
   score++;
-  scoreElem.textContent = `倒した人数：${score}人`;
+  scoreElem.textContent = `殺した人数：${score}人`;
   if (score >= 20) {
     gameclear.style.display = 'block';
     clearEnemies();
