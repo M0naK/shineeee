@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ストレス解消ゲーム</title>
+  <style>
+    #game {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    img {
+      position: absolute;
+    }
+    #score {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="game">
+    <img id="gamestart" src="gamestart.png">
+    <img id="gameclear" src="gameclear.png" style="display:none;">
+    <div id="score">倒した人数：0人</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
